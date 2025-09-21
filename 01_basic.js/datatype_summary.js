@@ -11,8 +11,9 @@ const isLoggedIn = false
 const outsideTemp = null
 let useremail;
 
-const id = symbol('123')
-const anotherId = symbol('123')
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
 
 console.log(id === anotherId); // false
 
@@ -46,3 +47,27 @@ const myFunction = function(){
 }
 
 console.log(typeof outsideTemp);
+
+
+// ++++++++++++++++++++
+// stack memory(primitive), Heap(non-primitive)
+let myYoutube = "mayankmishra"
+let anotherName = myYoutube
+anotherName = "chaiaurcode"
+
+console.log(myYoutube)
+console.log(anotherName)
+
+let userone = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userone
+userTwo.email = "mayank@gmail.com"
+
+console.log(userone.email);
+console.log(userTwo.email);
+
+
+
