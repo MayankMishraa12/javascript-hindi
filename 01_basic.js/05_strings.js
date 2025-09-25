@@ -8,7 +8,7 @@ const repoCount = 50
 const gameName = new String('mayank-hc-com') //declaration of string
 
 // console.log(gameName[0]);
-// console.log(gameName.__proto__);
+// console.log(gameName.__proto__); // prototype
 
 
 // console.log(gameName.length);
